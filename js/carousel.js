@@ -114,7 +114,6 @@ ready(function () {
     bulmaCarousel.attach('#slider', {
         slidesToScroll: 1,
         slidesToShow: 3,
-        infinite: false,
         autoplay: true,
         autoplaySpeed: 7000,
     });
