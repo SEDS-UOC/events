@@ -15,6 +15,14 @@
   src: url("../font/regular.otf");
 }*/
 
+/*
+theme colors
+color1 - #D789D7;
+color2 - #9D65C9;
+color3  -#5D54A4;
+color4 - #2A3D66;
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -49,7 +57,7 @@ html {
 
 body {
   font-family: "SFPro", sans-serif !important;
-  background-color:  #010A2D;
+  background-color:  #D789D7;
   color: #ffffff;
 }
 
@@ -82,7 +90,14 @@ body {
   max-width: 250px;
 }
 
+.font-color1{
+  color:#2A3D66;
+}
+.font-color2{
+  color:#9D65C9;
+}
 .font-block{
+  color:#2A3D66;
   font-family: "norwester" !important;
 }
 
@@ -90,8 +105,8 @@ body {
     color: #4c83ff !important;
 }
 
-.font-yellow{
-  color: #ffc107 !important;
+.font-purple{
+  color: #9D65C9 !important;
 }
 
 #navbar-logo {
@@ -99,7 +114,7 @@ body {
 }
 
 .navbar{
-  background-color:  #010A2D;
+  background-color:  #D789D7;
   padding: 1rem;
 }
 
@@ -108,7 +123,7 @@ body {
 }
 
 .navbar-item{
-  color: white;
+  color:#2A3D66;
   font-weight: bold;
   font-size: 0.95rem;
 }
@@ -151,7 +166,7 @@ hr {
 .title{
   margin: 1em 0 0;
   text-align: center;
-  color: #ffffff;
+  color: #2A3D66;
 }
 
 .card {
@@ -262,6 +277,23 @@ hr {
     background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
 }
 
+.survey-card{
+  margin: auto !important;
+  text-align: left;
+  max-width: 450px;
+  color: #010A2D;
+  background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+}
+
+#survey p.title{
+  text-align: center;
+  margin-top: 1em;
+}
+#survey p.subtitle{
+  text-align: justify;
+  margin-top: 1em; 
+}
+
 #contact p.title,
 #contact p.subtitle{
   text-align: left;
@@ -273,6 +305,25 @@ hr {
         height: auto;
         text-align: center;
         width: auto;
+    }
+
+    .survey-card {
+      height: auto;
+      text-align: center;
+      width: 20rem;
+      font-size: 1rem;
+      margin: 1rem;
+  }
+
+    #survey .img{
+      width: 10rem;
+    }
+    #survey p.title{
+      text-align: center;
+    }
+    #survey p.subtitle{
+      text-align: justify;
+      font-size: 0.8rem;
     }
 
     #contact p.title,
