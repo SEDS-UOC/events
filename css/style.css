@@ -1,8 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css");
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
 @import url("https://unpkg.com/bulma@0.8.0/css/bulma.min.css");
-@import url("./particle.css");
 @import url("./helpers.css");
 
 /*
@@ -13,24 +13,14 @@ color3  -#5D54A4;
 color4 - #751AB6; blackish
 */
 
-* {
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Encode Sans', sans-serif;
-    src: url("../font/EncodeSans-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Bangers', cursive;
-    src: url("../font/Bangers-Regular.ttf");
-}
-  
 /* @font-face {
     font-family: "norwester";
     src: url("../font/norwester.otf");
 } */
+
+* {
+    box-sizing: border-box;
+}
   
 html {
     scroll-behavior: smooth !important;
@@ -42,26 +32,36 @@ body {
     color: #751AB6;
 }
 
+p, a{
+    font-weight: 550;
+}
+
 #top-section{
-    height:100vh;
+    height:90vh;
     position: relative;
-    background-image:  url(../img/top-bg.jpg);
     color:#FDF7FF;
+}
+
+
+#welcome-bg{
+    height:90vh;
+    float: right;
+    background-image: url(../img/top-bg.jpg);
 }
 
 #welcome-section{
     position: absolute;
     font-weight: 600;
     top: 50%;
-    left: 40%;
+    left:35%;
     transform: translateX(-50%) translateY(-50%);
     /*color:#751AB6;*/
     text-align: left;
 }
 
 #welcome-title{
-    font-family: 'Bangers', cursive;
-    font-weight: 400;
+    font-family: 'Chau Philomene One' !important;
+    font-weight: 500;
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 0.5rem;
@@ -73,8 +73,8 @@ body {
 }
 
 .font-block{
-    font-family: "Bangers" !important;
-    font-weight: 400;
+    font-family: 'Chau Philomene One' !important;
+    font-weight: 450;
 }
 
 .font-purple{
@@ -97,7 +97,7 @@ body {
 .navbar-item{
     font-weight: bold;
     color: #751AB6;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .navbar-item:hover{
@@ -105,8 +105,8 @@ body {
 }
 
 .btn {
-    color: black !important;
-    background-color: #5D54A4 !important ;
+    color: #FDF7FF !important;
+    background-color:  #9327E0 !important ;
     font-size: 0.9rem;
 }
 
@@ -121,7 +121,7 @@ hr {
     margin: auto;
     width: 80%;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(67, 0, 118, 0.75), rgba(0, 0, 0, 0));
 }
 
 #about, #articles, #posts, #surveys, #posters{
@@ -139,17 +139,19 @@ hr {
 }
 
 .about-card {
-    min-height: 50%;
-    border-radius: 300px;
+    min-height: 300px;
+    border-radius: 30px;
     padding: 1em;
     margin: 0 0.7em 1em;
     box-shadow: none;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(186,190,245,1) 0%, rgba(192,192,245,1) 33.1%, rgba(218,203,246,1) 90% );
+    background-color: #E5D1F5;
+    box-shadow: 5px 10px 18px #d6bfe9;
 }
 
 .info{
     text-align: center;
     padding: 0.4em 1em;
+    font-weight: bold
 }
 
 .card {
@@ -173,7 +175,7 @@ hr {
 }
 
 .article-card{
-    background-image: radial-gradient( circle 343px at 46.3% 47.5%,  rgba(242,242,242,1) 0%, rgba(241,241,241,1) 72.9% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(221, 199, 255,1) 0%, rgb(251, 241, 255) 0%, rgba(221, 199, 255,1) 84% );
     margin-bottom: 3em;
 }
 
@@ -189,6 +191,7 @@ hr {
 }
 
 .section{
+    margin-top: auto;
     overflow: hidden !important;
 }
 
