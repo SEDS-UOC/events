@@ -171,7 +171,11 @@ hr {
 .about-logo{
     margin: 0;
     height: 100px;
-    border-radius: 50%;
+}
+
+.about-wsw{
+    margin: 15px;
+    height: 70px;
 }
 
 .article-card{
