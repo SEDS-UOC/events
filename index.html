@@ -467,8 +467,8 @@
             <!--start carousel-->
             <div id="carousel-demo" class="carousel">
   
-                <div class="is-half">
-                    <div class="card survey-card">
+                <div class="column">
+                    <div class="card survey-card is-half">
                         <div class="columns">
                             <div class="column is-mobile card-image">
                                 <img class="img" src="./img/logo1.1.png" alt="post">
@@ -485,8 +485,8 @@
                     </div>
                 </div>
 
-                <div class="is-half">
-                    <div class="card survey-card">
+                <div class="column">
+                    <div class="card survey-card is-half">
                         <div class="columns">
                             <div class="column is-mobile card-image">
                                 <img class="img" src="./img/logo1.1.png" alt="post">
@@ -503,8 +503,8 @@
                     </div>
                 </div>
 
-                <div class="is-half">
-                    <div class="card survey-card">
+                <div class="column">
+                    <div class="card survey-card is-half">
                         <div class="columns">
                             <div class="column is-mobile card-image">
                                 <img class="img" src="./img/logo1.1.png" alt="post">
@@ -521,8 +521,44 @@
                     </div>
                 </div>
 
-                <div class="is-half">
-                    <div class="card survey-card">
+                <div class="column">
+                    <div class="card survey-card is-half">
+                        <div class="columns">
+                            <div class="column is-mobile card-image">
+                                <img class="img" src="./img/logo1.1.png" alt="post">
+                            </div>
+                            <div class="column is-7 is-mobile">
+                                <p class="title is-5 mb-1">Poster Name</p>
+                                <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                     porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                    distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                <p class="link"><a href="">Link of the poster</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card survey-card is-half">
+                        <div class="columns">
+                            <div class="column is-mobile card-image">
+                                <img class="img" src="./img/logo1.1.png" alt="post">
+                            </div>
+                            <div class="column is-7 is-mobile">
+                                <p class="title is-5 mb-1">Poster Name</p>
+                                <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                     porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                    distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                <p class="link"><a href="">Link of the poster</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card survey-card is-half">
                         <div class="columns">
                             <div class="column is-mobile card-image">
                                 <img class="img" src="./img/logo1.1.png" alt="post">
@@ -540,6 +576,7 @@
                 </div>
 
             </div>
+            <br>
 
         </div>
             <!--end corousel-->
@@ -597,7 +634,8 @@
 		<script>
 		bulmaCarousel.attach('#carousel-demo', {
 			slidesToScroll: 1,
-			slidesToShow: 3
+			slidesToShow: 3,
+            infinite: true,
 		});
 		</script>
     <!-- Scroll reveal -->
