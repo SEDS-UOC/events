@@ -294,6 +294,15 @@ hr {
   margin-top: 1em; 
 }
 
+#posterCompetition p.title{
+  text-align: center;
+  margin-top: 1em;
+}
+#posterCompetition p.subtitle{
+  text-align: justify;
+  margin-top: 1em; 
+}
+
 #contact p.title,
 #contact p.subtitle{
   text-align: left;
@@ -322,6 +331,17 @@ hr {
       text-align: center;
     }
     #survey p.subtitle{
+      text-align: justify;
+      font-size: 0.8rem;
+    }
+
+    #posterCompetition .img{
+      width: 10rem;
+    }
+    #posterCompetition p.title{
+      text-align: center;
+    }
+    #posterCompetition p.subtitle{
       text-align: justify;
       font-size: 0.8rem;
     }
