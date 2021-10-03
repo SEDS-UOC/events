@@ -52,7 +52,7 @@
             <div class="columns is-multiline is-centered">
                 <div class="column is-1"></div>
                 <div class="column is-5 is-centered">
-                    <div class="about-card">
+                    <div class="card about-card">
                         <div class="img">
                             <img class="about-wsw" src="./img/wsw-sl.png">
                         </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="column is-5 is-centered">
-                    <div class="about-card">
+                    <div class="card about-card">
                         <div class="img">
                             <img class="about-logo" src="./img/favicon.png">
                         </div>
@@ -235,9 +235,41 @@
         <h1 class="title is-2 mb-1 font-block">Survey</h1>
         <div class="container">
             <div class="columns is-multiline is-centered">
-                <div class="column is-4">
+                <div class="column is-2"></div>
+                <div class="column is-8">
+                    <div class="card guidelines pl-3 pr-3">
+                        <h1 class="mb-1" style="text-align: center; font-size: 1.5em;">Guidelines</h1>
+                        <ul>
+                            <li>Do this</li>
+                            <li>Do that</li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="column is-4">
+                <div class="column is-2"></div>
+            </div>
+            <div class="columns is-multiline is-centered">
+                <a class="button is-rounded btn mt-1" style="border: none; margin: 1em;" href="#">
+                    <span><b>Survey 1</b></span>
+                </a>
+                <a class="button is-rounded btn mt-1" style="border: none; margin: 1em;" href="#">
+                    <span><b>Survey 2</b></span>
+                </a>
+                <a class="button is-rounded btn mt-1" style="border: none; margin: 1em;" href="#">
+                    <span><b>Survey 3</b></span>
+                </a>
+            </div>
+
+            <div class="is-centered">
+                <h1 class="mt-1 mb-1 deadline-text">
+                    Submission Deadline
+                </h1>
+                <div class="columns is-centered">
+                    <p class="countdown-text" id="survey-days"></p>
+                    <p class="countdown-text" id="survey-hours"></p>
+                    <p class="countdown-text" id="survey-mins"></p>
+                    <p class="countdown-text" id="survey-secs"></p>
+                    <h2 class="countdown-text" id="survey-end"></h2>
                 </div>
             </div>
         </div>
@@ -248,12 +280,17 @@
     <div id="posters">
         <h1 class="title is-2 font-block">Poster Competition</h1>
         <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column is-3"></div>
-                <div class="column is-6 is-centered">
-
+            <div class="is-centered">
+                <h1 class="mt-1 mb-1 deadline-text">
+                    Submission Deadline
+                </h1>
+                <div class="columns is-centered">
+                    <p class="countdown-text" id="poster-days"></p>
+                    <p class="countdown-text" id="poster-hours"></p>
+                    <p class="countdown-text" id="poster-mins"></p>
+                    <p class="countdown-text" id="poster-secs"></p>
+                    <h2 class="countdown-text" id="poster-end"></h2>
                 </div>
-                <div class="column is-3"></div>
             </div>
         </div>
     </div>
@@ -305,6 +342,7 @@
     </footer>
     <script type="text/javascript" src="js/landing.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
     <script src="https://bulma-carousel.onrender.com/assets/js/bulma-carousel.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!--Scroll reveal-->
