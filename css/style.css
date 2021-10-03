@@ -37,39 +37,56 @@ p, a{
 }
 
 #top-section{
+    height:100vh;
+    position: relative;
+    background-image: url(../img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #welcome-section{
+    position: absolute;
+    font-weight: 600;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+
+/* #top-section{
     height:90vh;
     position: relative;
     color:#FDF7FF;
 }
-
-
 #welcome-bg{
     height:90vh;
     float: right;
     background-image: url(../img/top-bg.jpg);
 }
-
 #welcome-section{
     position: absolute;
     font-weight: 600;
     top: 50%;
     left:35%;
     transform: translateX(-50%) translateY(-50%);
-    /*color:#751AB6;*/
+    color:#751AB6;
     text-align: left;
-}
+} */
 
 #welcome-title{
     font-family: 'Chau Philomene One' !important;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1;
     margin-bottom: 0.5rem;
-    color:#751AB6;
+    color:#f3e4f8;
 }
 
-#welcome-image{
-    max-width: 250px;
+.welcome-subtitle{
+    color: #f3e4f8; 
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.3em 2rem;
 }
 
 .font-block{
@@ -96,12 +113,12 @@ p, a{
 
 .navbar-item{
     font-weight: bold;
-    color: #751AB6;
+    color: #FDF7FF;
     font-size: 1rem;
 }
 
 .navbar-item:hover{
-    color: #9327E0 !important;
+    color: #ca81ff !important;
 }
 
 .btn {
@@ -124,11 +141,11 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(67, 0, 118, 0.75), rgba(0, 0, 0, 0));
 }
 
-#about, #articles, #posts, #surveys, #posters{
+#about, #articles, #graphics, #surveys, #posters, #panel{
     padding: 3rem 2rem 4rem 2rem;
 }
 
-#about h1, #articles h1, #posts h1, #surveys h1, #posters h1, footer h1{
+#about h1, #articles h1, #graphics h1, #surveys h1, #posters h1, #panel h1, footer h1{
     letter-spacing: 1px;
 }
 
@@ -144,14 +161,14 @@ hr {
     padding: 1em;
     margin: 0 0.7em 1em;
     box-shadow: none;
-    background-color: #E5D1F5;
+    background-color: #eddcfc;
     box-shadow: 5px 10px 18px #d6bfe9;
 }
 
 .info{
     text-align: center;
     padding: 0.4em 1em;
-    font-weight: bold
+    font-weight: 700;
 }
 
 .card {
@@ -180,7 +197,9 @@ hr {
 
 .article-card{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(221, 199, 255,1) 0%, rgb(251, 241, 255) 0%, rgba(221, 199, 255,1) 84% );
+    margin-top: 0;
     margin-bottom: 3em;
+    font-size: 0.95em;
 }
 
 .article-card h5{
@@ -190,8 +209,14 @@ hr {
 }
 
 .article-img{
-    height: 180px;
+    height: 200px;
     border-radius: 10px;
+}
+
+.article-sub{
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.95em;
 }
 
 .section{
@@ -204,43 +229,7 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    .contact-us-card {
-        height: auto;
-        text-align: center;
-        width: auto;
-    }
 
-    #contact p.title,
-    #contact p.subtitle{
-      text-align: center;
-    }
-    #scoreboard-container{
-        display: flex;
-        align-items: center;
-    }
-  }
-
-.contact-img{
-    width: 150px;
-    border-radius: 50%;
-}
-
-/*sponsors section*/
-.sponsor-logo2{
-    height: 150px;
-    width: 150px;
-}
-
-.sponsor-icon{
-    font-size: 20px;
-    margin: 0 10px;
-}
-
-.sponsor-card{
-    margin: auto !important;
-    max-width: 240px;
-    color: #FDF7FF;
-    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
 }
 
 /*footer */
