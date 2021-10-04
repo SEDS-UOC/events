@@ -13,6 +13,11 @@
 </head>
 
 <body">
+    <button onclick="topFunction()" id="back-to-top-btn" title="Go to top">
+        <span class="icon is-small hvr-icon">
+            <i class="fas fa-arrow-alt-circle-up" style="font-size: 2.5em;"></i>
+        </span>
+    </button>
     <!-- navigation -->
     <div id="top-section">
         <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -349,6 +354,28 @@
     <script src="https://bulma-carousel.onrender.com/assets/js/bulma-carousel.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!--Scroll reveal-->
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("back-to-top-btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     </body>
 
 </html>
