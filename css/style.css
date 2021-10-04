@@ -280,6 +280,10 @@ ul{
         font-size: 0.8em;
     }
 
+    .article-text,.article-sub {
+        display: none !important;
+    }
+
 }
 
 /*footer */
