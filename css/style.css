@@ -317,31 +317,9 @@ footer .social-icons:hover {
 .justify-text{
   text-align: justify !important;
 }
-.judges-card{
-  height: 450px;
-}
-.subtitle{
-word-break: break-word;
-}
-#judges .column{
-  flex-grow: 0;
-}
+
 @media screen and (min-width: 480px) {
-    .judges-card{
-        height: 410px;
-        max-width:220px;
-    }
-    .judge-img{
-        max-height: 150px;
-        max-width: 150px;
-    }
-      .group-col-sl{
-        padding-left: 3em !important;
-    }
-    
-    .group-col{
-        padding-left: 6em !important;
-    }
+
 }
 @media screen and (max-width: 479px) {
         .graphics-text{
