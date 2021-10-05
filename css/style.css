@@ -184,6 +184,7 @@ ul{
 
 .article-card{
     background-color: #eddcfc;
+    min-height: 660px !important;
 }
 
 .article-card h5{
@@ -205,6 +206,7 @@ ul{
     text-align: right;
     font-weight: 600;
     font-size: 0.95em;
+    margin-top: 0.5em;
 }
 
 .graphics-card{
@@ -325,8 +327,8 @@ footer .social-icons:hover {
 
 @media screen and (max-width: 479px) {
     .article-img{
-        height: 180px;
-        width: 270px;
+        height: 140px;
+        width: 210px;
     }
     .graphics-img{
         height: 250px;
@@ -336,7 +338,7 @@ footer .social-icons:hover {
         padding: 0.3em;
     } 
     #back-to-top-btn{
-        right: 40px;
+        right:  40px;
     }
 }
 
