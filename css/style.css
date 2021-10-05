@@ -194,7 +194,8 @@ ul{
 }
 
 .article-img{
-    height: 250px;
+    height: 340px;
+    width: 340px;
     border-radius: 10px;
 }
 
@@ -327,8 +328,8 @@ footer .social-icons:hover {
 
 @media screen and (max-width: 479px) {
     .article-img{
-        height: 140px;
-        width: 210px;
+        height: 200px;
+        width: 200px;
     }
     .graphics-img{
         height: 250px;
