@@ -301,11 +301,22 @@ ul{
     .welcome-subtitle{
         font-size: 0.8em;
     }
-
     .article-text,.article-sub {
         display: none !important;
     }
-
+    .article-card{
+        min-height: 480px !important;
+        padding: 1em;
+    }
+    .article-card h5{
+        font-size: 12px;
+    }
+    .graphics-text{
+        padding-right: 0;
+    }
+    #panel-poster{
+        width: 95%;
+    }
 }
 
 /*footer */
@@ -349,6 +360,12 @@ footer .social-icons:hover {
         height: 200px;
         width: 200px;
     }
+    .article-card{
+        min-height: 300px !important;
+    }
+    .slider-navigation-previous, .slider-navigation-next{
+        color: #751AB6;
+    }
     .graphics-img{
         height: 250px;
         width: 250px;
@@ -356,6 +373,9 @@ footer .social-icons:hover {
     .graphics-text{
         padding: 0.3em;
     } 
+    #panel-poster{
+        width: 100%;
+    }
     #back-to-top-btn{
         right:  40px;
     }

@@ -22,7 +22,7 @@ var myfunc = setInterval(function () {// Run myfunc every second
         document.getElementById("poster-hours").innerHTML = ""
         document.getElementById("poster-mins").innerHTML = ""
         document.getElementById("poster-secs").innerHTML = ""
-        document.getElementById("poster-end").innerHTML = "TIME IS UP!!";
+        document.getElementById("poster-end").innerHTML = "Time is Up!!";
     }
 }, 1000);
 
@@ -46,6 +46,6 @@ var myfunction = setInterval(function () {
         document.getElementById("survey-hours").innerHTML = ""
         document.getElementById("survey-mins").innerHTML = ""
         document.getElementById("survey-secs").innerHTML = ""
-        document.getElementById("survey-end").innerHTML = "TIME IS UP!!";
+        document.getElementById("survey-end").innerHTML = "Time is Up!!";
     }
 }, 1000);
