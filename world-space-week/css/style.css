@@ -273,6 +273,16 @@ ul{
     color:#751AB6;
 }
 
+#panel-poster{
+    width: 80%;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.panel-img{
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
     #about, #articles, #graphics, #surveys, #posters, #panel{
         padding:auto;
@@ -365,6 +375,6 @@ display: none;
   cursor: pointer;
 }
 
-#back-to-top-btn:hover {
+a:hover, #back-to-top-btn:hover {
     color: #6900BB;
   }
