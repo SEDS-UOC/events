@@ -1,3 +1,539 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo1.1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
+    <title>WSW</title>
+    <style>
+        .order ol::after {
+            list-style-type: decimal !important;
+            list-style-position: outside;
+            list-style-image: none;
+        }
+        @media only screen and (min-width: 1200px) {
+        #welcome-section {
+            width:900px;
+            top: 40%;
+        }
+        .slider-item{
+            width:305px !important;
+        }
+        }
+        @media only screen and (min-width: 1000px) {
+        .slider-item{
+            width:405px !important;
+        }
+        }
+        .articleList-img{
+            border-radius: 30px;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+        .img-container{
+            max-width: 350px;
+            margin-left: 20px;
+        }
+        .slider-navigation-next, .slider-navigation-previous {
+            background: none;
+            border: 1px solid rgb(39, 33, 33);
+            color: rgb(39, 33, 33);
+        }
+        .slider-page{
+            background-color: rgb(39, 33, 33) !important;
+        }
+        #slider{
+            padding-bottom: 5px;
+        }
+        .slider-pagination{
+            bottom: -40px !important;
+        }
+    </style>
+</head>
+
+<body class="has-animations">
+
+    <!-- navigation -->
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img id="navbar-logo" src="img/World Space Week Sri Lanka-03.png" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href=""> Home </a>
+                <a class="navbar-item" href="#about"> About </a>
+                <a class="navbar-item" href="#articles"> Articles </a>
+                <a class="navbar-item" href="#posts"> Posts </a>
+                <a class="navbar-item" href="#survey"> Surveys </a>
+                <a class="navbar-item" href="#posterCompetition"> Poster Competition </a>
+                <a class="navbar-item" href="#contact"> Contact Us </a>
+            </div>
+            <!-- <div class="navbar-end">
+                <div class="navbar-item hvr-icon-wobble-horizontal">
+                    <div class="buttons">
+                        <a class="button is-primary nav-signup is-rounded hvr-icon-forward" style="border: none;"
+
+                            href="#">
+                            <span>Submit Task</span>
+                            <span class="icon is-small">
+                                <i class="fa fa-long-arrow-alt-right hvr-icon"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        </div>
+    </nav>
+    <!-- end of navigation -->
+
+    <div id="particles-js">
+        <div class="container" id="welcome-section" >
+            <center><img id="welcome-image" src="img/logo1.1.png"></center>
+            <h1 class="mt-2 font-block" id="welcome-title" style="display: inline-block;">World <span class="font-purple">Space</span>Week in SEDS UOC<br>2021</h1>
+            <!--<p class="font-color1">A chapter under SEDS Sri Lanka</p>-->
+        </div>
+    </div>
+    <hr>
+    <!-- about section  -->
+    <div id="about">
+        <h1 class="title is-2 mb-4 font-block">About Us</h1>
+        <div class="container">
+            <div class="columns mt-0">
+                <div class="column pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
+                    <div class="img">
+                        <img class="about-logo" src="./img/World Space Week Sri Lanka-03.png">
+                    </div>
+                    <div class="info">
+                        <p class="justify-text p2 font-color1">“INTO THE STARS” is a global knowledge exchange program to enhance
+                            the
+                            skills
+                            of young SEDSers
+                            and incorporate with international SEDS chapters as one family.
+                            Due to the global pandemic situation, the program is planned to be held online. </p>
+                    </div>
+                </div>
+                <div class="column pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
+                    <div class="img">
+                        <img class="about-logo" src="./img/favicon.png">
+                    </div>
+                    <div class="info">
+                        <p class="justify-text p2 font-color1">SEDS UOC (Students for the Exploration and Development of Space –
+                            University
+                            of Colombo) is a society of the
+                            University of Colombo that consists of undergraduates who are enthusiastic about various
+                            aspects
+                            related to
+                            space exploration and development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of about section  -->
+    <!-- beggining of article section  -->
+    <hr>
+    <div id="articleSeries">
+        <h1 class="title is-2 mb-1 font-block">Article Series</h1>
+        <div class="container">
+            <section class="section">
+                <div id="slider">
+                    <!--
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <div class='box'>
+                            <div  style="border: 1px solid #000;">
+                                <figure class="image is-5by3">
+                                    <img src="./img/logo1.1.png">
+                                </figure>
+                            </div>
+                            <div>
+                                <p>
+                                A computer is a machine that can be instructed to carry out sequences 
+                                of arithmetic or logical operations automatically via computer programming. 
+                                Modern computers have the ability to follow generalized sets of operations,
+                                called programs. These programs enable computers to perform an extremely wide 
+                                range of tasks.
+                                </p>
+                                <br>
+                                <button class="button is-rounded" style="background-color: #5D54A4;color: aliceblue;">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <section class="container-article">
+                        <div class="card-article">
+                            <div class="card-image card-1"></div>
+                            <h2><b>Sub title</b></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget turpis ut risus luctus consequat. 
+                                Phasellus at mauris in nisiluctus dapibus id eget libero. Interdum et malesuada fames ac ante ipsum primis 
+                                in faucibus. Morbi varius ante id nisl pretium, ut finibus turpis ornare. Cras finibus nec ante sit amet 
+                                venenatis. </p>
+                            <a href="">Read more</a>
+                        </div>
+                        <div class="card-article">
+                            <div class="card-image card-2"></div>
+                            <h2><b>Sub title</b></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget turpis ut risus luctus consequat. 
+                                Phasellus at mauris in nisiluctus dapibus id eget libero. Interdum et malesuada fames ac ante ipsum primis 
+                                in faucibus. Morbi varius ante id nisl pretium, ut finibus turpis ornare. Cras finibus nec ante sit amet 
+                                venenatis.</p>
+                            <a href="">Read more</a>
+                        </div>
+                
+                    </section>
+
+                </div>
+            </section>
+        </div>
+        <br>
+    </div>
+    <hr>
+        <!-- end of article section  -->
+        <!-- beggining of post series section  -->
+    <div id="contact">
+        <h1 class="title is-2 mb-4 font-block"> Post Series</h1>
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4">
+                    <div class="card article-card">
+                        <div class="img">
+                            <img class="article-img"
+                                src="https://blog.sedsuoc.lk/wp-content/uploads/2021/09/603783-e1630813759884-1160x600.jpg"
+                                alt="article-image">
+                        </div>
+                        <h5>Blu and Midi’s Journey Into the Stars</h5>
+                        <p class="justify-text p2"> “This is mothership to Comet Gain, do you copy? Blu? Midi? Are you
+                            there?” The beeping of the communicator had taken the place of the singing of the birds. Its
+                            crackling voice was fighting with the sound of the river to be heard. It was a while […]</p>
+                        <a class="button is-rounded nav-signup mt-1" style="background-color: #5D54A4 !important;border: none;"
+                            href="https://blog.sedsuoc.lk/2021/09/05/blu-and-midi-s-journey-into-the-stars/">
+                            <span><b>Read More</b></span>
+                            <span class="icon is-small hvr-icon">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card article-card">
+                        <div class="img">
+                            <img class="article-img"
+                                src="https://blog.sedsuoc.lk/wp-content/uploads/2021/09/Webp.net-compress-image-e1630851959543-1160x600.jpg"
+                                alt="article-image">
+                        </div>
+                        <h5>“Into the Stars”: View from the Organizing Committee</h5>
+                        <p class="justify-text p2"> In a time where we have been pushed into solitude inside our
+                            ever-so-familiar walls, have you followed the glimmer of moonlight oozing its way through
+                            the window back into the sky? Did you find […]</p>
+                        <a class="button is-rounded nav-signup mt-1" style="background-color: #5D54A4 !important;border: none;"
+                            href="https://blog.sedsuoc.lk/2021/09/05/into-the-stars-a-view-from-the-organizing-committee/">
+                            <span><b>Read More</b></span>
+                            <span class="icon is-small hvr-icon">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <!-- <div class="card article-card">
+                        <div class="img">
+                            <img class="article-img"
+                                src="https://blog.sedsuoc.lk/wp-content/uploads/2021/09/603783-e1630813759884-1160x600.jpg"
+                                alt="article-image">
+                        </div>
+                        <h5>Blu and Midi’s Journey Into the Stars</h5>
+                        <p class="justify-text p2"> “This is mothership to Comet Gain, do you copy? Blu? Midi? Are you
+                            there?” The beeping of the communicator had taken the place of the singing of the birds. Its
+                            crackling voice was fighting with the sound of the river to be heard. It was a while […]</p>
+                        <a class="button is-rounded nav-signup mt-1" style="background-color: #5D54A4;border: none;"
+                            href="https://blog.sedsuoc.lk/2021/09/05/blu-and-midi-s-journey-into-the-stars/">
+                            <span><b>Read More</b></span>
+                            <span class="icon is-small hvr-icon">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of post series section  -->
+    <!-- survey section  -->
+    <div id="survey">
+        <h1 class="title is-2 mb-4 font-block">Surveys</h1>
+
+            <div class="container">
+
+                <div class="columns is-multiline is-centered">
+      
+                    <div class="column is-half">
+                        <div class="card contact-us-card">
+                            <div class="columns">
+                                <div class="column is-mobile card-image">
+                                    <img class="img" src="./img/logo1.1.png" alt="post">
+                                </div>
+                                <div class="column is-7 is-mobile">
+                                    <p class="title is-5 mb-1">Survey Name</p>
+                                    <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                         porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                        distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                    <p class="link"><a href="">Link of the survey</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card survey-card">
+                            <div class="columns">
+                                <div class="column is-mobile card-image">
+                                    <img class="img" src="./img/logo1.1.png" alt="post">
+                                </div>
+                                <div class="column is-7 is-mobile">
+                                    <p class="title is-5 mb-1">Survey Name</p>
+                                    <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                         porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                        distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                    <p class="link"><a href="">Link of the survey</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card survey-card">
+                            <div class="columns">
+                                <div class="column is-mobile card-image">
+                                    <img class="img" src="./img/logo1.1.png" alt="post">
+                                </div>
+                                <div class="column is-7 is-mobile">
+                                    <p class="title is-5 mb-1">Survey Name</p>
+                                    <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                         porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                        distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                    <p class="link"><a href="">Link of the survey</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card survey-card">
+                            <div class="columns">
+                                <div class="column is-mobile card-image">
+                                    <img class="img" src="./img/logo1.1.png" alt="post">
+                                </div>
+                                <div class="column is-7 is-mobile">
+                                    <p class="title is-5 mb-1">Survey Name</p>
+                                    <p class="subtitle is-5 mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, natus tenetur! Unde inventore magnam,
+                                         porro eligendi quia beatae assumenda ad delectus voluptas itaque, 
+                                        distinctio quasi reiciendis, iure eos temporibus fugit?</p>
+                                    <p class="link"><a href="">Link of the survey</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+            </div>
+
+    </div>
+    <!-- end of survey section  -->
+    <hr>
+    <!-- footer -->
+    <footer class="footer">
+        <h1 class="title font-block has-text-white">Follow Us</h1>
+        <div class="row mt-1 social-icon-set has-text-centered">
+            <!-- <a href="https://twitter.com/seds_uoc">
+                <span class="icon is-small mr-1 social-icons">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a> -->
+            <a href="https://www.facebook.com/sedsuoc/">
+                <span class="icon is-small mr-1 social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                </span>
+            </a>
+            <a href="https://www.instagram.com/sedsuoc/">
+                <span class="icon is-small mr-1 social-icons">
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCNxdWPmZgjpGytZgoAkZbLA">
+                <span class="icon is-small mr-1 social-icons">
+                    <i class="fab fa-youtube"></i>
+                </span>
+            </a>
+            <a href="https://www.linkedin.com/company/seds-uoc/about/">
+                <span class="icon is-small mr-1 social-icons">
+                    <i class="fab fa-linkedin-in"></i>
+                </span>
+            </a>
+        </div>
+        <br>
+        <div id="footer-copyright" class="content has-text-centered">
+            <p class="has-text-white">
+                (C) 2021 SEDS UOC - Maintained by the
+                <a href="mailto:admin@sedsuoc.lk" class="has-text-white">Web Team</a>.
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/landing.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script src="https://bulma-carousel.onrender.com/assets/js/bulma-carousel.min.js"></script>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+</body>
+
+</html>
+=======
 <script>
   window.location.replace("https://www.sedsuoc.lk/");
 </script>
+>>>>>>> 81ca66ba131df1b04787e878e18e87fb8d8eed84
