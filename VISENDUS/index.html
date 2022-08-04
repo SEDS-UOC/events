@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
     <link rel="stylesheet" href="https://bulma-carousel.onrender.com/assets/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/feedback.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
     <title>VISENDUS</title>
     <style>
         .order ol::after {
@@ -41,11 +41,11 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href=""> Home </a>
-                <a class="navbar-item" href="#about"> About </a>
-               <a class="navbar-item" href="#gallary">Events Gallery</a>
+                <a class="navbar-item" href="#about"> About us </a>
+                <!--<a class="navbar-item" href="#gallary">Events Gallery</a>
                 <a class="navbar-item" href="#leaderboard">Article</a>
                 <a class="navbar-item" href="#sponsors"> Sponsors </a>
-                <a class="navbar-item" href="#feedback"> Feedback </a>
+                <a class="navbar-item" href="#feedback"> Feedback </a>-->
                 <!-- <a class="navbar-item" href="#contact"> Contact Us </a> -->
             </div>
         </div>
@@ -54,45 +54,65 @@
     <!-- end of navigation -->
     <!--Home page-->
 
-    <div id="particles-js">
-        <div class="container" id="welcome-section"  style="z-index: 10;">
+    <div id="large-header" class="large-header">
+        <!-- partial:index.partial.html -->
+            <canvas id="demo-canvas"></canvas>
+        
+        <div class="container" id="welcome-section" style="z-index: 10;">
             <center><img id="welcome-image" src="img/logo1.png"></center>
             <h1 class="mt-2 font-block" id="welcome-title">VISENDUS 2022</h1>
             <p>By SEDS in University of Colombo</p>
             <p>A chapter under SEDS Sri Lanka</p>
 
             <div class="column has-text-centered">
-                <br/>
-                <button onclick="window.open('https://forms.gle/gHT3yzbHfuFnUuiY6','_blank').focus()" class="button is-warning is-rounded register-button" style="position:relative;z-index:9999;">
+                <br />
+                <button onclick="window.open('https://forms.gle/gHT3yzbHfuFnUuiY6','_blank').focus()"
+                    class="button is-warning is-rounded register-button" style="position:relative;z-index:9999;">
                     <strong>Register Now</strong>
                 </button>
             </div>
 
         </div>
 
-    </div>   
     </div>
+    <br>
+    <br>
     <hr>
+   
     <!-- about section  -->
     <div id="about">
         <h1 class="title is-2 mb-4 font-block">About Us</h1>
         <div class="container">
             <div class="columns mt-0">
-                <div class="column pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
+
+                <div class="column is-3 pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
                     <div class="img">
                         <img class="about-logo" src="./img/logo1.png">
                     </div>
+
+                </div>
+
+                <div class="column is-9 pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
+
                     <div class="info">
-                        <p class="justify-text p2">VISENDUS 2022: A visit to the Sri Lanka Planetarium will be the 
-                            first-ever physical project organized by SEDS UOC since its inauguration in 2019. Even though 
-                            the country’s first and only planetarium is located inside the University of Colombo premises 
-                            itself, many undergraduates are not aware of the specialty of this national monument. SEDS UOC 
-                            is planning to give them the opportunity to visit and explore the importance of the Sri Lanka Planetarium. 
-                            This visit will be followed by some exciting fun activities at the University of Colombo Grounds. 
-                            SEDS UOC is willing to provide support in projects organized by the planetarium and plans to 
+                        <p class="justify-text p2"><br />
+                            VISENDUS 2022: A visit to the Sri Lanka Planetarium will be the
+                            first-ever physical project organized by SEDS UOC since its inauguration in 2019. Even
+                            though
+                            the country’s first and only planetarium is located inside the University of Colombo
+                            premises
+                            itself, many undergraduates are not aware of the specialty of this national monument. SEDS
+                            UOC
+                            is planning to give them the opportunity to visit and explore the importance of the Sri
+                            Lanka Planetarium.
+                            This visit will be followed by some exciting fun activities at the University of Colombo
+                            Grounds.
+                            SEDS UOC is willing to provide support in projects organized by the planetarium and plans to
                             organize many projects in the future with the cooperation of the Sri Lanka Planetarium.</p>
                     </div>
                 </div>
+
+                <!--
                 <div class="column pb-2 pl-2 pr-2 reveal-on-scroll is-revealing">
                     <div class="img">
                         <img class="about-logo" src="./img/favicon.png">
@@ -120,12 +140,13 @@
                             children named SEDS Juniors.</p>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </div>
     <!-- end of about section  -->
 
-    
+
     <hr>
     <!-- Gallery section  -->
     <!--
@@ -168,8 +189,8 @@
                     </div>
                     </div>
                     -->
-                    <!--1st Draw End-->
-                    <!--
+    <!--1st Draw End-->
+    <!--
                     <div id="slider">
                     <div class="img-container">
                         <img class="feedback-img" src="./img/feedback/sadev.png" alt="feedback13">
@@ -208,13 +229,13 @@
     </div>
 -->
     <!-- end of Gallery section  -->
-    <hr/>
-    
-    <!-- start of article section -->
+    <hr />
+
+    <!-- start of article section 
     <div id="articles">
         <h1 class="title is-2 mb-4 font-block">Articles</h1>
         <div class="container">
-            <!-- Start Carousel -->
+            <!-- Start Carousel 
             <div id="carousel-demo" class="carousel">
 
                 <div class="card article-card">
@@ -306,14 +327,15 @@
                 </div>
 
             </div>
-            <!-- End Carousel -->
+            <!-- End Carousel 
         </div>
     </div>
-    <!--close of article section  -->
+    <!--close of article section  
    
     
     <hr/>
     <!-- start of sponsors section -->
+    <!--
     <div id="sponsors">
         <h1 class="title is-2 mb-4 font-block">Sponsors</h1>
 
@@ -321,7 +343,7 @@
             <div class="columns is-multiline is-centered mt-0">
 
                 <!-- <div class="column is-1"></div> -->
-
+    <!--
                 <div class="column ml-1 mr-1 mb-1">
                     <div class="card sponsor-card">
                         <div class="img">
@@ -465,9 +487,10 @@
             </div>
         </div>
     </div>
+    -->
     <!-- end of sponsors section  -->
 
-    <!-- start of Registration section  -->
+    <!-- start of Registration section 
     <hr/>
     
     <section id="register" class="section">
@@ -496,6 +519,7 @@
                         <!-- <button onclick="window.open('https://forms.gle/gHT3yzbHfuFnUuiY6','_blank').focus()" class="button is-warning is-rounded register-button">
                             <strong>Register Now</strong>
                         </button> -->
+    <!--
                         <iframe style="min-width: 300px;width: 100%;" class="google-form" src="https://forms.gle/gHT3yzbHfuFnUuiY6?embedded=true" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
                 </div>
@@ -503,20 +527,23 @@
     </section>
     <!-- end of registration section  -->
 
+    <!--
     <hr>
-      <!-- feedback section  -->
+      <!-- feedback section  
     <section id="feedback" class="section">
 
       <!-- start of feedback section -->
+    <!--
       <div id="feedback">
           <h1 class="title is-2 mb-4 font-block">feedback</h1>
           
           <div class="container container-feedback">
-              <!-- Slider main container -->
+              <!-- Slider main container
               <div class="swiper">
-                  <!-- Additional required wrapper -->
+                  <!-- Additional required wrapper
                   <div class="swiper-wrapper">
                     <!-- Slides -->
+    <!--
                     <div class="swiper-slide"><img src="img/feedback/Ninthukesan.png"></div> 
                     <div class="swiper-slide"><img src="img/feedback/krishna.png"></div>
                     <div class="swiper-slide"><img src="img/feedback/sadev.png"></div>
@@ -555,8 +582,9 @@
       
       </div>    
     </section>
-      <!-- end of feedback section  -->
-     
+    -->
+    <!-- end of feedback section  -->
+
     <hr>
     <!-- footer -->
     <footer class="footer">
@@ -597,6 +625,12 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://bulma-carousel.onrender.com/assets/js/bulma-carousel.min.js"></script>
 
+    <!-- partial -->
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+    <script src="js/particles-js.js"></script>
+
     <!--Scroll reveal-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -612,7 +646,7 @@
             pauseOnHover: true
         });
     </script>
-    
+
 </body>
 
 </html>
