@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
     <link rel="stylesheet" href="https://bulma-carousel.onrender.com/assets/css/bulma-carousel.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
     <title>VISENDUS</title>
     <style>
         .order ol::after {
@@ -52,11 +55,17 @@
     <!-- end of navigation -->
 
     <div>
-        <video autoplay muted loop id="myVideo">
+         <!-- partial:index.partial.html -->
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+                        
+
+        <!-- <video autoplay muted loop id="myVideo">
             <source src="./img/back.mkv" type="video/mp4">
-          </video>
+          </video> -->
           
         <div class="container" id="welcome-section">
+
             <center><img id="welcome-image" src="img/logo1.png"></center>
             <h1 class="mt-2 font-block" id="welcome-title">VISENDUS 2022</h1>
             <p>By SEDS in University of Colombo</p>
@@ -70,7 +79,7 @@
                 </button>
             </div>
         </div>
-       
+    </div>
     </div>
 
     <hr>
@@ -519,11 +528,15 @@
             </p>
         </div>
     </footer>
+    <script type="text/javascript" src="js/bgeffect.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/landing.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://bulma-carousel.onrender.com/assets/js/bulma-carousel.min.js"></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
 
     <!--Scroll reveal-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
