@@ -51,8 +51,10 @@ html {
 
 body {
   font-family: "SFPro", sans-serif !important;
-  background:#010A2D;
   color: #ffffff;
+  background-image: url("../img/back.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #particles-js{
@@ -121,6 +123,8 @@ body {
   padding: 1rem;
   margin-bottom: -100px;
   opacity: 50%;
+  color:blue;
+  font-weight: bold;
 }
 
 .navbar-burger{
@@ -164,14 +168,14 @@ hr {
 .large-header {
   position: relative;
   width: 100%;
-  background: #333;
+  background:transparent;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
   z-index: 1;
 }
 #large-header {
-  background-image: url("../img/back.png");
+  /*background-image: url("../img/back.png");*/
 }
 .main-title {
   position: absolute;
