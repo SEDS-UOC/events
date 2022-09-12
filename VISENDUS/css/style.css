@@ -47,9 +47,11 @@ html {
   scroll-behavior: smooth !important;
 }
 
+
+
 body {
   font-family: "SFPro", sans-serif !important;
-  background-color:  #03010e;
+  background:#010A2D;
   color: #ffffff;
 }
 
@@ -108,8 +110,17 @@ body {
 }
 
 .navbar{
-  background-color:  #03010e;
+    background-color: transparent;
+    padding: 1rem;
+    margin-bottom: -100px;
+    opacity: 50%;
+}
+
+.navbar:hover{
+  background-color: black;
   padding: 1rem;
+  margin-bottom: -100px;
+  opacity: 50%;
 }
 
 .navbar-burger{
@@ -160,7 +171,7 @@ hr {
   z-index: 1;
 }
 #large-header {
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");*/
+  background-image: url("../img/back.png");
 }
 .main-title {
   position: absolute;
@@ -454,7 +465,7 @@ h2 {
 
 /*footer */
 .footer {
-    background-color: #03010e;
+    background-color: #010A2D;
     margin-bottom: 0 !important;
     padding-bottom: 1em !important;
     color: #209cee;
