@@ -147,6 +147,10 @@ body {
   color: #ffc107 !important;
 }
 
+.font-white{
+  color: #ffffff !important;
+}
+
 #navbar-logo {
   max-height: 3rem !important;
 }
