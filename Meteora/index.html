@@ -17,7 +17,7 @@
     <!-- Google Fonts (For Fonts)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <!-- OWL Carousel CDN CSS (For Carousel)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -27,19 +27,26 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="css/styles.css">
     <title>METEORA</title>
+    <style>
+
+
+    </style>
+
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <!-- Navigation Bar-->
     <header>
         <div class="logo">
-            <img src="Images/Meteora LOGO BGRMV.png">
+            <img src="images/meteora-logo.png" width="100px">
         </div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <div class="logo">
-                <img src="Images/Meteora LOGO BGRMV.png" alt="">
+                <img src="images/meteora-logo.png" alt="Meteora Logo">
             </div>
             <ul>
                 <li>
@@ -66,8 +73,37 @@
         </label>
     </header>
 
-    <div>
-    </div>
+    <section id="home-section">
+        <div class="row">
+            <div class="col-6 col-lg-12">
+                <div class="home-page-image">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 area p-4">
+                            <div class="area-inner d-flex flex-column justify-content-center align-items-start p-2">
+                                <p class="meteora-text text-light fw-normal lh-1">Welcome to Meteora</p>
+                                <small class="meteora-desc-text text-light lh-1">Welcome to Meteora</small>
+                                <div class="button-group mt-4">
+                                    <a href="">
+                                        <button class="btn btn-sm border-light text-light rounded-pill px-3"><span><i
+                                                class="fa-regular fa-pen-to-square"></i></span> Joint With Us
+                                        </button>
+                                    </a>
+                                    &nbsp
+                                    <a href="">
+                                        <button class="btn btn-sm border-light text-light rounded-pill px-3"><span><i
+                                                class="fa-regular fa-pen-to-square"></i></span> Contact Us
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 area"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Project about and details (Intro Area) -->
     <section id="about-section" class="px-0 py-4">
@@ -91,7 +127,7 @@
                         <p>Some Description About Us Here Some Description About Us Here Some Description About Us Here
                             Some Description About Us Here Some Description About Us Here Some Description About Us
                             Here Some Description About Us Here Some Description About Us Here Some Description About Us
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -245,7 +281,7 @@
                             Here Some Description About Sponsors Here Some Description About Sponsors Here Some
                             Description
                             About Sponsors
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -415,7 +451,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </div>
