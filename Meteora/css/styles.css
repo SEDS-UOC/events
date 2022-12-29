@@ -4,25 +4,41 @@
 /*---------------------- Home Page --------------------*/
 body{
     font-family: Ubuntu,serif;
+    background-color: #3B5998;
+}
+h1, h2, h3, h4, h5, h6,button{
+    color: #3B5998;
+}
+.title{
+    color: #fff;
 }
 .home-page-image {
     width: 100%;
     height: 100vh;
     border-radius: 0 0 5px 5px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/home-page-image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("../images/home-page-image.jpg");
 }
 
 .meteora-text {
-    font-size: 100px;
+    font-size: 40px;
+    color: #3B5998;
+}
+.meteora-name{
+    font-size: 70px;
+    color: #3B5998;
 }
 
 .area {
-    height: 600px
+    height: 650px;
 }
 
 .area-inner {
     height: 100%;
 }
+.logo-outline{
+    box-shadow: 0 0 10px #3B5998;
+}
+
 /*---------------------- Home Page --------------------*/
 /*---------------------- Nav Bar Styles --------------------*/
 header{
@@ -34,6 +50,9 @@ header{
     justify-content: space-between;
     padding: 0 40px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo{
     width: 120px;
@@ -53,6 +72,7 @@ nav ul li a{
     padding: 8px 18px;
     transition: 0.2s;
     border-radius: 30px;
+    text-decoration: none;
 }
 nav ul li a:hover{
     background-color: #dfe7fb;
@@ -74,7 +94,7 @@ nav ul li a.active{
 .hamburger div{
     width: 25px;
     height: 2px;
-    margin-right: 6px 0;
+    margin-right: 6px;
     background: #ffffff;
     margin-top: 5px;
 }
@@ -93,7 +113,7 @@ nav ul li a.active{
         height: 100vh;
         background-color: #000000;
         transition: 0.2s;
-        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.0s);
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.0);
     }
     #nav_check:checked ~ nav{
         left: 0;
@@ -101,7 +121,6 @@ nav ul li a.active{
     nav .logo{
         display: block;
         height: 70px;
-        display: flex;
         align-items: center;
         margin-left: 30px;
     }
@@ -151,14 +170,19 @@ nav ul li a.active{
 }
 
 .btn-custom{
+    border: 1px solid #3B5998;
+    background-color: transparent;
+    color: #3B5998;
+}
+.btn-custom:hover{
     background-color: #3B5998;
     color: #fff;
-
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 
 /*---------------------- About Page Styles --------------------*/
-
 
 /*---------------------- Sponsors Page Styles --------------------*/
 .sponsors-area {
@@ -223,8 +247,10 @@ footer ul,li{
     width: 30%;
 }
 
-.social-media{
-    margin-top: 30px;
+.social-media .fa-brands:hover{
+    cursor: pointer;
+    background-color: #3B5998;
+    border: 2px solid #3B5998;
 }
 
 .social-media ul{
@@ -232,22 +258,22 @@ footer ul,li{
 }
 
 .social-media ul li a{
-    display: inline-block;
-    margin-right: 10px;
+    display: flex;
     width: 60px;
     height: 60px;
     padding-top: 12px;
     background-color: transparent;
     border: 2px solid #fff;
-    text-align: center;
     border-radius:50px;
     font-size: 30px;
     color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media ul li a:hover{
     background-color: #3B5998;
-    color: #fff;
+    color: #000000;
 }
 
 .link ul li {
@@ -271,4 +297,36 @@ footer ul,li{
     background-color: #3B5998;
 }
 
+
+/*Dark Mode Toggle Style*/
+.change-theme{
+    margin: 5px;
+    width: 120px;
+    height: 65px;
+}
+
+#dark-btn{
+    margin: 5px;
+    top: 20px;
+    right: 20px;
+    background: #ffff;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s;
+}
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #0a0a0a;
+}
 /*---------------------- Footer Styles --------------------*/
