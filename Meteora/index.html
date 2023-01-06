@@ -40,163 +40,84 @@
 <div class="container-fluid">
     <!-- Navigation Bar-->
     <header>
-        <div class="logo">
-            <img src="images/meteora-logo.png" width="100px">
-        </div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <div class="logo">
-                <img src="images/meteora-logo.png" alt="Meteora Logo">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Meteora</a>
+                <a class="navbar-brand" href="#"><img src="images/meteora-logo.png" alt="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link  mx-1 my-1 py-1 px-3 rounded-pill" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  mx-1 my-1 py-1 px-3 rounded-pill" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  mx-1 my-1 py-1 px-3 rounded-pill">Info Graphic Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  mx-1 my-1 py-1 px-3 rounded-pill">Field Visits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  mx-1 my-1 py-1 px-3 rounded-pill">Sponsors</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#">Articles</a>
-                </li>
-                <li>
-                    <a href="#">Info Graphic Posts</a>
-                </li>
-                <li>
-                    <a href="#">Field Visits</a>
-                </li>
-                <li>
-                    <a href="#">Sponsors</a>
-                </li>
-            </ul>
         </nav>
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
     </header>
 
     <section id="home-section">
-        <div class="row">
-            <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="home-page-image">
+        <section id="about">
+            <div class="card border-0 shadow my-5 bg-transparent text-dark">
+                <div class="card-body p-5 bg-transparent text-dark">
                     <div class="row">
-                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 area p-4">
-                            <div class="area-inner d-flex flex-column justify-content-center align-items-start p-2">
-                                <p class="meteora-text fw-normal lh-1">Welcome to <br><span
-                                        class="meteora-name">Meteora</span></p>
-                                <small class="meteora-desc-text text-light lh-2 text-align-center">About Us Here About
-                                    Us Here About Us
-                                    Here About Us Here About Us Here About Us Here About Us Here About Us Here About Us
-                                    Here About Us Here About Us Here About Us Here About Us Here About Us Here About Us
-                                    Here About Us Here About Us Here About Us Here About Us Here About Us Here About Us
-                                    Here About Us Here About Us Here</small>
-                                <div class="button-group mt-4">
-                                    <button class="btn btn-sm btn-custom rounded-pill ">Join Our Team</button>
-                                    <button class="btn btn-sm btn-custom rounded-pill mx-2">Contact Us</button>
-                                </div>
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 p-4" style="height: 500px">
+                            <div class="meteora-inner-text d-flex flex-column  ">
+                                <h2 class="fw-bold text-light lh-1">Welcome to</h2>
+                                <h1 class="fw-bolder meteora-font about-title lh-1">Meteora</h1>
+                                <p class="text-justify about-text text-light">
+                                    Experience the power of space science in action! <strong class="fw-bolder meteora-font">'Meteora'
+                                    - SEDS-UOC's</strong>
+                                    latest project
+                                    delves into the vital role space technology plays in mitigating the impact of
+                                    meteorological changes on Earth. From a captivating content series to an educational
+                                    field visit at the Meteorological Department of Sri Lanka and a guest lecture by experts
+                                    in the field, this project is not to be missed. Don't let the weather catch you by
+                                    surprise anymore. Join us in exploring where space and sky meet, a deep dive into the
+                                    intersection of meteorology and astronomy.
+                                </p>
+                            </div>
+                            <div class="button-area">
+                                <a href="">
+                                    <button class="btn text-light mx-1 my-1 py-1 px-3 rounded-pill border border-light">Join
+                                        Our Team
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="btn text-light mx-1 my-1 py-1 px-3 rounded-pill border border-light">
+                                        Contact Us
+                                    </button>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center area">
-                            <div class="logo-outline d-flex align-items-center justify-content-center rounded">
-                                <img src="images/meteora-logo.png" alt="" width="400">
+                        <div class="col-12 col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="image-outer ">
+                                <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/40055/image-upload/Screenshot_2022_02_16_at_9_30_14_am_copy.jpg"
+                                     class="rounded mx-auto d-block" alt="..." width="500px">
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!-- Project about and details (Intro Area) -->
-        <!--    <section id="about-section" class="px-0 py-4">-->
-        <!--        <div class="row">-->
-        <!--            <div class="col-12 mt-2">-->
-        <!--                <h1 class="h1 text-center fw-bolder text-dark">About Us</h1>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="row my-2">-->
-        <!--            <div class="col-12 d-flex align-items-center justify-content-center">-->
-        <!--                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"-->
-        <!--                     style="width: 50px; height: 50px">-->
-        <!--                    <i class="fa-solid fa-user-astronaut"></i>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="row text-center d-flex justify-content-center">-->
-        <!--            <div class="col-8">-->
-        <!--                <div class="card border border-light">-->
-        <!--                    <div class="card-body text-center">-->
-        <!--                        <p>Some Description About Us Here Some Description About Us Here Some Description About Us Here-->
-        <!--                            Some Description About Us Here Some Description About Us Here Some Description About Us-->
-        <!--                            Here Some Description About Us Here Some Description About Us Here Some Description About Us-->
-        <!--                        </p>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="row my-2">-->
-        <!--            <div class="col-12 col-lg-4 col-md-12 col-sm-12 outer-box p-2" id="train">-->
-        <!--                <div class="inner-box border border-none rounded shadow-lg">-->
-        <!--                    <div class="card" style="width: 100%; height: 100%">-->
-        <!--                        <img src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg"-->
-        <!--                             class="card-img" alt="" height="100%" width="100%">-->
-        <!--                        <div class="card-img-overlay">-->
-        <!--                            <p class="card-text"><i class="fa-solid fa-shuttle-space"></i></p>-->
-        <!--                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to-->
-        <!--                                additional content. This content is a little bit longer.</p>-->
-        <!--                            <p class="card-text"><small>Last updated 3 mins ago</small></p>-->
-        <!--                            <a href="">-->
-        <!--                                <button class="btn btn-sm border-dark rounded-pill px-3"><span><i-->
-        <!--                                        class="fa-regular fa-pen-to-square"></i></span> See More-->
-        <!--                                </button>-->
-        <!--                            </a>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-12 col-lg-4 col-md-12 col-sm-12 outer-box p-2">-->
-        <!--                <div class="inner-box border border-none rounded shadow-lg">-->
-        <!--                    <div class="card" style="width: 100%; height: 100%">-->
-        <!--                        <img src="https://love-shayari.co/wp-content/uploads/2021/10/sun-rise.jpg"-->
-        <!--                             class="card-img" alt="" height="100%" width="100%">-->
-        <!--                        <div class="card-img-overlay">-->
-        <!--                            <p class="card-text"><i class="fa-solid fa-meteor"></i></p>-->
-        <!--                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to-->
-        <!--                                additional content. This content is a little bit longer.</p>-->
-        <!--                            <p class="card-text"><small>Last updated 3 mins ago</small></p>-->
-        <!--                            <a href="">-->
-        <!--                                <button class="btn btn-sm border-dark rounded-pill px-3"><span><i-->
-        <!--                                        class="fa-regular fa-pen-to-square"></i></span> See More-->
-        <!--                                </button>-->
-        <!--                            </a>-->
-
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-12 col-lg-4 col-md-12 col-sm-12 outer-box p-2">-->
-        <!--                <div class="inner-box border border-none rounded shadow-lg">-->
-        <!--                    <div class="card" style="width: 100%; height: 100%">-->
-        <!--                        <img src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg?fit=fill&w=480&h=270"-->
-        <!--                             class="card-img" alt="" height="100%" width="100%">-->
-        <!--                        <div class="card-img-overlay">-->
-        <!--                            <p class="card-text"><i class="fa-solid fa-satellite"></i></p>-->
-        <!--                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to-->
-        <!--                                additional content. This content is a little bit longer.</p>-->
-        <!--                            <p class="card-text"><small>Last updated 3 mins ago</small></p>-->
-        <!--                            <a href="">-->
-        <!--                                <button class="btn btn-sm border-dark rounded-pill px-3"><span><i-->
-        <!--                                        class="fa-regular fa-pen-to-square"></i></span> See More-->
-        <!--                                </button>-->
-        <!--                            </a>-->
-
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </section>-->
-    </section>
+        </section>
 
     <!--  Articles  -->
     <section id="articles">
@@ -256,33 +177,11 @@
     </section>
 
     <!--  Sponsor Details  -->
-    <section id="sponsor-section" class="px-0 py-4">
-        <div class="row">
-            <div class="col-12 mt-2">
-                <h1 class="h1 text-center fw-bolder title">Our Sponsors</h1>
-            </div>
-        </div>
-        <div class="row my-2 mb-4">
-            <div class="col-12  d-flex align-items-center justify-content-center">
-                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle"
-                     style="width: 50px; height: 50px">
-                    <i class="fa-solid fa-hands-holding-child"></i>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!--            <div class="col-12 col-lg-3 col-md-12 col-sm-12 metora-logo d-flex flex-column justify-content-center align-items-center">-->
-            <!--                <div class="row d-flex flex-column justify-content-center align-items-center">-->
-            <!--                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">-->
-            <!--                        <img src="images/Meteora%20LOGO%20BGRMV.png" alt="metora logo here" width="300px" height="300px">-->
-            <!--                    </div>-->
-            <!--                    <p class="p mt-2">Here Small description about meteora Sponsors</p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <div class="col-12 col-lg-12 col-md-12 col-sm-12 sponsors-area">
+        <section id="sponsors">
+            <div class="container-fluid">
                 <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 4000px; height: 200px">
+                    <div class="item d-flex align-items-center justify-content-center">
+                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
@@ -303,8 +202,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 4000px; height: 200px">
+                    <div class="item d-flex align-items-center justify-content-center">
+                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
@@ -325,8 +224,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 4000px; height: 200px">
+                    <div class="item d-flex align-items-center justify-content-center">
+                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
@@ -347,8 +246,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 4000px; height: 200px">
+                    <div class="item d-flex align-items-center justify-content-center">
+                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                         class="sponsor-image" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sponsor Name</h3>
+                                        <small class="small">Brief Description About Our Sponsors</small>
+                                        <p class="card-text mt-2">
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item d-flex align-items-center justify-content-center">
+                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
@@ -371,8 +292,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Bottom(Seds Details) -->
 
