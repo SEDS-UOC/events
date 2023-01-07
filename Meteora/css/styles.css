@@ -35,3 +35,51 @@ body {
     font-size: 25px;
     padding: 0 5px;
 }
+
+.section{
+    margin-top: auto;
+    overflow: hidden !important;
+}
+
+.article-card{
+    border-radius: 15px;
+    padding: 2em;
+    margin: 0 0.7em 1em;
+    box-shadow: none;
+    background-color: #bce0fe;
+    min-height: 750px !important;
+    max-height: 770px !important;
+}
+.article-card h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 0.3em
+}
+.article-img{
+    height: 360px;
+    width: 360px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.article-text{
+    font-size: 17px;
+}
+
+.article-sub{
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-top: 0.5em;
+}
+.card-content{
+    width: 110%;
+    margin-left: -6%;
+    margin-top: -5%;
+}
+.media-content .subtitle{
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-top: 0.5em;
+}
