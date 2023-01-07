@@ -32,8 +32,32 @@
     <title>METEORA</title>
     <style>
 
+    .relative_div{
+       position: relative;
+       text-align: center;
+       color: white;
+    }
 
-    </style>
+    .centered {
+       position: absolute;
+       top: 80%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       border: solid white 3px;
+       border-radius: 10%;
+       padding: 7px 10px;
+       background: rgba(255, 255, 255, 0.7);
+   }
+   #InfoGraphic{
+       text-align :center;
+   }
+   .centered a {
+       color: white;
+       text-decoration: none;
+       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   }
+
+   </style>
 
 </head>
 <body>
@@ -139,23 +163,94 @@
     </section>
 
     <!--  InfoGraphic Posts  -->
-    <section id="infographics">
+    <section id="InfoGraphic">
+    <h1>InfoGraphic Post</h1>
+    <hr/>
+    <div class="container">
+        <div class="row d-flex justify-content-around my-1 py-1">
 
-        <div class="row">
-            <div class="col-12 mt-2">
-                <h1 class="h1 text-center fw-bolder title">InfoGraphic Posts</h1>
+
+            <div class="col-5 border p-1 rounded">
+                <div class="relative_div" >
+                        <embed src="df.jpg"
+                               frameborder="0" width="100%" height="100%">
+
+
+                    <div class="centered" style="left: 37%;">
+                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop">
+                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span>  <b>Expand</b> 
+                        </a>
+                    </div>
+
+                    <div class="centered"  style="left: 63%;" onclick="">
+                        <a href="df.jpg"  role="button" aria-pressed="true" download>
+                            <span> <img src="df.jpg" width="30px" alt=""/> </span> <b>Download</b>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row my-2">
-            <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"
-                     style="width: 50px; height: 50px">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+
+            <div class="col-5 border p-1 rounded">
+                <div class="relative_div" >
+                    <embed src="df.jpg"
+                           frameborder="0" width="100%" height="100%">
+
+                    <div class="centered" style="left: 37%;">
+                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop2">
+                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span> <b>Expand</b>  
+                        </a>
+                    </div>
+
+                    <div class="centered"  style="left: 63%;" onclick="">
+                        <a href="PH 105.pdf"  role="button" aria-pressed="true" download>
+                            <span> <img src="df.jpg" width="30px" alt=""/> </span><b> Download </b>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">InfoGraphic Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="df.jpg"
+                           frameborder="0" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel2">InfoGraphic Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="PH 105.pdf"
+                           frameborder="0" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+</section>
+
 
     <!--   Field Visits Banners  -->
     <section id="fieldvisits">
