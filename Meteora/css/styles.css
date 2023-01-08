@@ -6,6 +6,7 @@
 }
 
 #about {
+    height: 100vh;
     background: url('https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -15,16 +16,14 @@
 
 .meteora-text {
     font-size: 40px;
-    color: #3B5998;
 }
 
 .meteora-name {
     font-size: 70px;
-    color: #3B5998;
 }
 
 .area {
-    height: 650px;
+    height: 700px;
 }
 
 .area-inner {
@@ -35,5 +34,74 @@
     box-shadow: 0 0 10px #3B5998;
 }
 
+.logo {
+    width: 50px;
+}
+
+.relative_div {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid white 3px;
+    border-radius: 10%;
+    padding: 7px 10px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#InfoGraphic {
+    text-align: center;
+}
+
+.centered a {
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 /*---------------------- Home Page --------------------*/
 /*---------------------- Nav Bar Styles --------------------*/
+
+
+/*---------------------- footer Styles --------------------*/
+
+
+.fa-square-facebook:hover{background-color: #0000ff}
+.fa-square-instagram:hover{background-color: #9370db}
+.fa-square-youtube:hover{background-color: #ff0000}
+.fa-linkedin:hover{background-color: #00bfff}
+
+/*---------------------- footer Styles --------------------*/
+
+
+/*---------------------- Colors --------------------*/
+.title{
+    color: #0F2557;
+}
+.footer-header-color{
+    color: #4B9FE1;
+}
+.footer-text-color{
+    color: #FFFFFF;
+}
+.meteora-text {
+    color: #3B5998;
+}
+.meteora-name-color {
+    color: #4B9FE1;
+}
+/*---------------------- Colors --------------------*/
+
+/*---------------------- Custom btn --------------------*/
+.custom-btn{
+    border: 1px solid #4B9FE1;
+    background-color: transparent;
+    color: #4B9FE1;
+}
+/*---------------------- Custom btn --------------------*/
