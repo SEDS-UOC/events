@@ -27,41 +27,46 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
+
     <!-- Article Carousel (For Carousel)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
     <title>METEORA</title>
     <style>
+        .logo {
+            width: 50px;
+        }
 
-    .relative_div{
-       position: relative;
-       text-align: center;
-       color: white;
-    }
+        .relative_div {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
-    .centered {
-       position: absolute;
-       top: 80%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       border: solid white 3px;
-       border-radius: 10%;
-       padding: 7px 10px;
-       background: rgba(255, 255, 255, 0.7);
-   }
-   #InfoGraphic{
-       text-align :center;
-   }
-   .centered a {
-       color: white;
-       text-decoration: none;
-       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-   }
+        .centered {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: solid white 3px;
+            border-radius: 10%;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, 0.7);
+        }
 
-   </style>
+        #InfoGraphic {
+            text-align: center;
+        }
+
+        .centered a {
+            color: white;
+            text-decoration: none;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+    </style>
 
 </head>
 <body>
@@ -70,8 +75,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/meteora-logo.png" alt="" height="50px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                <a class="navbar-brand" href="#"><img src="images/meteora-logo.png" class="logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -111,20 +117,24 @@
                                 <h2 class="fw-bold text-light lh-1">Welcome to</h2>
                                 <h1 class="fw-bolder meteora-font about-title lh-1">Meteora</h1>
                                 <p class="text-justify about-text text-light">
-                                    Experience the power of space science in action! <strong class="fw-bolder meteora-font">'Meteora'
+                                    Experience the power of space science in action! <strong
+                                        class="fw-bolder meteora-font">'Meteora'
                                     - SEDS-UOC's</strong>
                                     latest project
                                     delves into the vital role space technology plays in mitigating the impact of
                                     meteorological changes on Earth. From a captivating content series to an educational
-                                    field visit at the Meteorological Department of Sri Lanka and a guest lecture by experts
+                                    field visit at the Meteorological Department of Sri Lanka and a guest lecture by
+                                    experts
                                     in the field, this project is not to be missed. Don't let the weather catch you by
-                                    surprise anymore. Join us in exploring where space and sky meet, a deep dive into the
+                                    surprise anymore. Join us in exploring where space and sky meet, a deep dive into
+                                    the
                                     intersection of meteorology and astronomy.
                                 </p>
                             </div>
                             <div class="button-area">
                                 <a href="">
-                                    <button class="btn text-light mx-1 my-1 py-1 px-3 rounded-pill border border-light">Join
+                                    <button class="btn text-light mx-1 my-1 py-1 px-3 rounded-pill border border-light">
+                                        Join
                                         Our Team
                                     </button>
                                 </a>
@@ -146,472 +156,516 @@
             </div>
         </section>
 
-    <!--  Articles  -->
-    <section id="articles">
+        <!--  Articles  -->
+        <section id="articles">
 
-        <div class="row">
-            <div class="col-12 mt-2">
-                <h1 class="h1 text-center fw-bolder title">Articles</h1>
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <h1 class="h1 text-center fw-bolder title">Articles</h1>
+                </div>
             </div>
-        </div>
-        <div class="container" >
-            <!-- Start Carousel -->
-            <div id="carousel-demo" class="carousel">
-              <div class="item-1">
-                <!-- Slide Content -->
-                <div class="card article-card">
-                  <div class="img">
-                    
-                      <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                    
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
-                      </div>
-                    </div>
-                
-                    <div class="content">
-                      Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                    </div>
-                    <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+            <div class="container">
+                <!-- Start Carousel -->
+                <div id="carousel-demo" class="carousel">
+                    <div class="item-1">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                       <span>
                         <b>Read More</b>
                       </span>
-                      <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                         <i class="fa fa-angle-right"></i>
                       </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-                <div class="item-2">
-                  <!-- Slide Content -->
-                  <div class="card article-card">
-                    <div class="img">
-                      
-                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                      
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <div class="content">
-                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                      </div>
-                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                    </div>
+                    <div class="item-2">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                         <span>
                           <b>Read More</b>
                         </span>
-                        <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                           <i class="fa fa-angle-right"></i>
                         </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item-3">
-                  <!-- Slide Content -->
-                  <div class="card article-card">
-                    <div class="img">
-                      
-                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                      
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <div class="content">
-                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                      </div>
-                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                    </div>
+                    <div class="item-3">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                         <span>
                           <b>Read More</b>
                         </span>
-                        <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                           <i class="fa fa-angle-right"></i>
                         </span>
-                      </a>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="item-4">
-                    <!-- Slide Content -->
-                    <div class="card article-card">
-                      <div class="img">
-                        
-                          <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                        
-                      </div>
-                      <div class="card-content">
-                        <div class="media">
-                          <div class="media-content">
-                            <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                            <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
-                          </div>
-                        </div>
-                    
-                        <div class="content">
-                          Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                        </div>
-                        <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                    <div class="item-4">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                           <span>
                             <b>Read More</b>
                           </span>
-                          <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                             <i class="fa fa-angle-right"></i>
                           </span>
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="item-5">
-                  <!-- Slide Content -->
-                  <div class="card article-card">
-                    <div class="img">
-                      
-                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                      
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                </a>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <div class="content">
-                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                      </div>
-                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                    </div>
+                    <div class="item-5">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                         <span>
                           <b>Read More</b>
                         </span>
-                        <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                           <i class="fa fa-angle-right"></i>
                         </span>
-                      </a>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="item-6">
-                <!-- Slide Content -->
-                <div class="card article-card">
-                  <div class="img">
-                    
-                      <img class="article-img" src="./images/article_banner.png" alt="Article image">
-                    
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
-                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
-                      </div>
-                    </div>
-                
-                    <div class="content">
-                      Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
-                    </div>
-                    <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                    <div class="item-6">
+                        <!-- Slide Content -->
+                        <div class="card article-card">
+                            <div class="img">
+
+                                <img class="article-img" src="./images/article_banner.png" alt="Article image">
+
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female
+                                            Spacewalk</p>
+                                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Moments in history are made in the direst and outlandish circumstances. Writing a
+                                    new chapter in human exploration of the infinite cosmos, we have two brave
+                                    astronauts who set their marks as firsts in the history of space exploration. Here's
+                                    I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the
+                                    First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                                </div>
+                                <a class="button is-info is-rounded btn mt-1" style="border: none;"
+                                   href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
                       <span>
                         <b>Read More</b>
                       </span>
-                      <span class="icon is-small hvr-icon">
+                                    <span class="icon is-small hvr-icon">
                         <i class="fa fa-angle-right"></i>
                       </span>
-                    </a>
-                  </div>
-                </div>
-            </div>
-            </div>
-            <!-- End Carousel -->
-        </div>
-
-    </section>
-
-    <!--  InfoGraphic Posts  -->
-    <section id="InfoGraphic">
-    <h1>InfoGraphic Post</h1>
-    <hr/>
-    <div class="container">
-        <div class="row d-flex justify-content-around my-1 py-1">
-
-
-            <div class="col-5 border p-1 rounded">
-                <div class="relative_div" >
-                        <embed src="df.jpg"
-                               frameborder="0" width="100%" height="100%">
-
-
-                    <div class="centered" style="left: 37%;">
-                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop">
-                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span>  <b>Expand</b> 
-                        </a>
-                    </div>
-
-                    <div class="centered"  style="left: 63%;" onclick="">
-                        <a href="df.jpg"  role="button" aria-pressed="true" download>
-                            <span> <img src="df.jpg" width="30px" alt=""/> </span> <b>Download</b>
-                        </a>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End Carousel -->
             </div>
 
+        </section>
 
-            <div class="col-5 border p-1 rounded">
-                <div class="relative_div" >
-                    <embed src="df.jpg"
-                           frameborder="0" width="100%" height="100%">
+        <!--  InfoGraphic Posts  -->
+        <section id="InfoGraphic">
+            <h1>InfoGraphic Post</h1>
+            <hr/>
+            <div class="container">
+                <div class="row d-flex justify-content-around my-1 py-1">
 
-                    <div class="centered" style="left: 37%;">
-                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop2">
-                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span> <b>Expand</b>  
-                        </a>
+
+                    <div class="col-5 border p-1 rounded">
+                        <div class="relative_div">
+                            <embed src="df.jpg"
+                                   frameborder="0" width="100%" height="100%">
+
+
+                            <div class="centered" style="left: 37%;">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span>
+                                    <b>Expand</b>
+                                </a>
+                            </div>
+
+                            <div class="centered" style="left: 63%;" onclick="">
+                                <a href="df.jpg" role="button" aria-pressed="true" download>
+                                    <span> <img src="df.jpg" width="30px" alt=""/> </span> <b>Download</b>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="centered"  style="left: 63%;" onclick="">
-                        <a href="PH 105.pdf"  role="button" aria-pressed="true" download>
-                            <span> <img src="df.jpg" width="30px" alt=""/> </span><b> Download </b>
-                        </a>
+
+                    <div class="col-5 border p-1 rounded">
+                        <div class="relative_div">
+                            <embed src="df.jpg"
+                                   frameborder="0" width="100%" height="100%">
+
+                            <div class="centered" style="left: 37%;">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                    <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span>
+                                    <b>Expand</b>
+                                </a>
+                            </div>
+
+                            <div class="centered" style="left: 63%;" onclick="">
+                                <a href="PH 105.pdf" role="button" aria-pressed="true" download>
+                                    <span> <img src="df.jpg" width="30px" alt=""/> </span><b> Download </b>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">InfoGraphic Post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <embed src="df.jpg"
-                           frameborder="0" width="100%" height="500px">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" >
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel2">InfoGraphic Post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <embed src="PH 105.pdf"
-                           frameborder="0" width="100%" height="500px">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">InfoGraphic Post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="df.jpg"
+                                   frameborder="0" width="100%" height="500px">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    </div>
+
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel2">InfoGraphic Post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="PH 105.pdf"
+                                   frameborder="0" width="100%" height="500px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
 
 </section>
 
 
-    <!--   Field Visits Banners  -->
-    <section id="fieldvisits">
+<!--   Field Visits Banners  -->
+<section id="fieldvisits">
 
+    <div class="row">
+        <div class="col-12 mt-2">
+            <h1 class="h1 text-center fw-bolder title">Field Visit Banners</h1>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"
+                 style="width: 50px; height: 50px">
+                <i class="fa-solid fa-earth-asia"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--  Sponsor Details  -->
+<section id="sponsors">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 mt-2">
-                <h1 class="h1 text-center fw-bolder title">Field Visit Banners</h1>
+                <h1 class="h1 text-center fw-bolder title">Sponsors</h1>
             </div>
         </div>
-        <div class="row my-2">
-            <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"
-                     style="width: 50px; height: 50px">
-                    <i class="fa-solid fa-earth-asia"></i>
+        <div class="owl-carousel owl-theme">
+            <div class="item d-flex align-items-center justify-content-center">
+                <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                 class="sponsor-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsor Name</h3>
+                                <small class="small">Brief Description About Our Sponsors</small>
+                                <p class="card-text mt-2">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+                <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                 class="sponsor-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsor Name</h3>
+                                <small class="small">Brief Description About Our Sponsors</small>
+                                <p class="card-text mt-2">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+                <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                 class="sponsor-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsor Name</h3>
+                                <small class="small">Brief Description About Our Sponsors</small>
+                                <p class="card-text mt-2">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+                <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                 class="sponsor-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsor Name</h3>
+                                <small class="small">Brief Description About Our Sponsors</small>
+                                <p class="card-text mt-2">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center justify-content-center">
+                <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                 class="sponsor-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsor Name</h3>
+                                <small class="small">Brief Description About Our Sponsors</small>
+                                <p class="card-text mt-2">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom(Seds Details) -->
+
+
+<section id="footer">
+    <footer>
+        <div class="row">
+            <div class="footer py-lg-5 d-flex ">
+                <div class="col-6 px-2">
+                    <h4>About</h4>
+                    <p>
+                        It is important to note that meteorolodists are interested in long-term trends in climate
+                        and weather, as well as their potential impacts on human populations, in addition to weather
+                        forecasting.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Articles</a></li>
+                        <li><a class="text-decoration-none" href="#">Info Graphic Posts</a></li>
+                        <li><a class="text-decoration-none" href="#">Field Visits</a></li>
+                        <li><a class="text-decoration-none" href="#">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4>Follow Us</h4>
+                    <div class="social-media d-flex align-items-center justify-content-start">
+                        <a href=""><i
+                                class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-facebook "></i></a>
+                        <a href=""><i
+                                class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-instagram"></i></a>
+                        <a href=""><i
+                                class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-youtube"></i></a>
+                        <a href=""><i
+                                class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    <!--  Sponsor Details  -->
-        <section id="sponsors">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 mt-2">
-                        <h1 class="h1 text-center fw-bolder title">Sponsors</h1>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="item d-flex align-items-center justify-content-center">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="..." >
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sponsor Name</h3>
-                                        <small class="small">Brief Description About Our Sponsors</small>
-                                        <p class="card-text mt-2">
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
-                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item d-flex align-items-center justify-content-center">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sponsor Name</h3>
-                                        <small class="small">Brief Description About Our Sponsors</small>
-                                        <p class="card-text mt-2">
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
-                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item d-flex align-items-center justify-content-center">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sponsor Name</h3>
-                                        <small class="small">Brief Description About Our Sponsors</small>
-                                        <p class="card-text mt-2">
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
-                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item d-flex align-items-center justify-content-center">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sponsor Name</h3>
-                                        <small class="small">Brief Description About Our Sponsors</small>
-                                        <p class="card-text mt-2">
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
-                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item d-flex align-items-center justify-content-center">
-                        <div class="card px-2 py-2 mb-3 shadow" style="width: 450px; height: 200px">
-                            <div class="row g-0">
-                                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sponsor Name</h3>
-                                        <small class="small">Brief Description About Our Sponsors</small>
-                                        <p class="card-text mt-2">
-                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                            <a href=""><i class="fa-solid fa-earth-americas"></i></a>
-                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                            <a href=""><i class="fa-solid fa-envelopes-bulk"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <!-- Bottom(Seds Details) -->
-
-
-    <section id="footer">
-        <footer>
-            <div class="row">
-                <div class="footer py-lg-5 d-flex ">
-                    <div class="col-6 px-2">
-                        <h4>About</h4>
-                        <p>
-                            It is important to note that meteorolodists are interested in long-term trends in climate
-                            and weather, as well as their potential impacts on human populations, in addition to weather
-                            forecasting.
-                        </p>
-                    </div>
-                    <div class="col-3">
-                        <h4>Quick Link</h4>
-                        <ul>
-                            <li><a class="text-decoration-none" href="#">Home</a></li>
-                            <li><a class="text-decoration-none" href="#">Articles</a></li>
-                            <li><a class="text-decoration-none" href="#">Info Graphic Posts</a></li>
-                            <li><a class="text-decoration-none" href="#">Field Visits</a></li>
-                            <li><a class="text-decoration-none" href="#">Sponsors</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h4>Follow Us</h4>
-                        <div class="social-media d-flex align-items-center justify-content-start">
-                            <a href=""><i class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-facebook "></i></a>
-                            <a href=""><i class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-instagram"></i></a>
-                            <a href=""><i class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-square-youtube"></i></a>
-                            <a href=""><i class="fa-brands fs-4 text-light p-3 m-1 border border-light rounded-circle fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right">
-                <p>&copy 2022 SEDS UOC - Maintained by the Web Team.</p>
-            </div>
-        </footer>
-    </section>
+        <div class="copy-right">
+            <p>&copy 2022 SEDS UOC - Maintained by the Web Team.</p>
+        </div>
+    </footer>
+</section>
 </div>
 <!-- JQuery CDN (For Carousel)-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -627,23 +681,23 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"         
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 
-<!-- Article Carousel (For Carousel)-->    
+<!-- Article Carousel (For Carousel)-->
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-    <script>
+<script>
     bulmaCarousel.attach('#carousel-demo', {
         slidesToScroll: 1,
         slidesToShow: 3
     });
-    </script>
+</script>
 </body>
 </html>
