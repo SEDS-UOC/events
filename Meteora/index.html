@@ -27,20 +27,48 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <!-- Article Carousel (For Carousel)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
     <title>METEORA</title>
     <style>
 
+    .relative_div{
+       position: relative;
+       text-align: center;
+       color: white;
+    }
 
-    </style>
+    .centered {
+       position: absolute;
+       top: 80%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       border: solid white 3px;
+       border-radius: 10%;
+       padding: 7px 10px;
+       background: rgba(255, 255, 255, 0.7);
+   }
+   #InfoGraphic{
+       text-align :center;
+   }
+   .centered a {
+       color: white;
+       text-decoration: none;
+       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   }
+
+   </style>
 
 </head>
 <body>
 <div class="container-fluid">
     <!-- Navigation Bar-->
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/meteora-logo.png" alt="" height="50px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -75,7 +103,7 @@
 
     <section id="home-section">
         <section id="about">
-            <div class="card border-0 shadow my-5 bg-transparent text-dark">
+            <div class="card border-0 shadow bg-transparent text-dark">
                 <div class="card-body p-5 bg-transparent text-dark">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-md-12 col-sm-12 p-4" style="height: 500px">
@@ -126,35 +154,280 @@
                 <h1 class="h1 text-center fw-bolder title">Articles</h1>
             </div>
         </div>
-        <div class="row my-2">
-            <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"
-                     style="width: 50px; height: 50px">
-                    <i class="fa-solid fa-palette"></i>
+        <div class="container" >
+            <!-- Start Carousel -->
+            <div id="carousel-demo" class="carousel">
+              <div class="item-1">
+                <!-- Slide Content -->
+                <div class="card article-card">
+                  <div class="img">
+                    
+                      <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                    
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                      </div>
+                    </div>
+                
+                    <div class="content">
+                      Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                    </div>
+                    <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                      <span>
+                        <b>Read More</b>
+                      </span>
+                      <span class="icon is-small hvr-icon">
+                        <i class="fa fa-angle-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                <div class="item-2">
+                  <!-- Slide Content -->
+                  <div class="card article-card">
+                    <div class="img">
+                      
+                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                      
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                      </div>
+                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                        <span>
+                          <b>Read More</b>
+                        </span>
+                        <span class="icon is-small hvr-icon">
+                          <i class="fa fa-angle-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-3">
+                  <!-- Slide Content -->
+                  <div class="card article-card">
+                    <div class="img">
+                      
+                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                      
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                      </div>
+                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                        <span>
+                          <b>Read More</b>
+                        </span>
+                        <span class="icon is-small hvr-icon">
+                          <i class="fa fa-angle-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-4">
+                    <!-- Slide Content -->
+                    <div class="card article-card">
+                      <div class="img">
+                        
+                          <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                        
+                      </div>
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-content">
+                            <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                            <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                          </div>
+                        </div>
+                    
+                        <div class="content">
+                          Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                        </div>
+                        <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                          <span>
+                            <b>Read More</b>
+                          </span>
+                          <span class="icon is-small hvr-icon">
+                            <i class="fa fa-angle-right"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="item-5">
+                  <!-- Slide Content -->
+                  <div class="card article-card">
+                    <div class="img">
+                      
+                        <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                      
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                          <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                      </div>
+                      <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                        <span>
+                          <b>Read More</b>
+                        </span>
+                        <span class="icon is-small hvr-icon">
+                          <i class="fa fa-angle-right"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="item-6">
+                <!-- Slide Content -->
+                <div class="card article-card">
+                  <div class="img">
+                    
+                      <img class="article-img" src="./images/article_banner.png" alt="Article image">
+                    
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">One Giant Leap for Womankind: the First All-Female Spacewalk</p>
+                        <p class="subtitle is-6">Author - V. H. Vithanawasam</p>
+                      </div>
+                    </div>
+                
+                    <div class="content">
+                      Moments in history are made in the direst and outlandish circumstances. Writing a new chapter in human exploration of the infinite cosmos, we have two brave astronauts who set their marks as firsts in the history of space exploration. Here's I.C. Ramachandra's account on how two women took "One Giant Leap for Womankind: the First All-Female Spacewalk". 👩🏻‍🚀👩🏻‍🚀
+                    </div>
+                    <a class="button is-info is-rounded btn mt-1" style="border: none;" href="https://blog.sedsuoc.lk/2021/10/10/one-giant-leap-for-womankind-the-first-all-female-spacewalk/">
+                      <span>
+                        <b>Read More</b>
+                      </span>
+                      <span class="icon is-small hvr-icon">
+                        <i class="fa fa-angle-right"></i>
+                      </span>
+                    </a>
+                  </div>
                 </div>
             </div>
+            </div>
+            <!-- End Carousel -->
         </div>
 
     </section>
 
     <!--  InfoGraphic Posts  -->
-    <section id="infographics">
+    <section id="InfoGraphic">
+    <h1>InfoGraphic Post</h1>
+    <hr/>
+    <div class="container">
+        <div class="row d-flex justify-content-around my-1 py-1">
 
-        <div class="row">
-            <div class="col-12 mt-2">
-                <h1 class="h1 text-center fw-bolder title">InfoGraphic Posts</h1>
+
+            <div class="col-5 border p-1 rounded">
+                <div class="relative_div" >
+                        <embed src="df.jpg"
+                               frameborder="0" width="100%" height="100%">
+
+
+                    <div class="centered" style="left: 37%;">
+                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop">
+                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span>  <b>Expand</b> 
+                        </a>
+                    </div>
+
+                    <div class="centered"  style="left: 63%;" onclick="">
+                        <a href="df.jpg"  role="button" aria-pressed="true" download>
+                            <span> <img src="df.jpg" width="30px" alt=""/> </span> <b>Download</b>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row my-2">
-            <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="text-center d-flex align-items-center justify-content-center border border-dark rounded-circle mb-4"
-                     style="width: 50px; height: 50px">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+
+            <div class="col-5 border p-1 rounded">
+                <div class="relative_div" >
+                    <embed src="df.jpg"
+                           frameborder="0" width="100%" height="100%">
+
+                    <div class="centered" style="left: 37%;">
+                        <a href=""  data-bs-toggle="modal"   data-bs-target="#staticBackdrop2">
+                            <span> <img src="df.jpg" width="30px" style="margin-right:5px; " alt=""/> </span> <b>Expand</b>  
+                        </a>
+                    </div>
+
+                    <div class="centered"  style="left: 63%;" onclick="">
+                        <a href="PH 105.pdf"  role="button" aria-pressed="true" download>
+                            <span> <img src="df.jpg" width="30px" alt=""/> </span><b> Download </b>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">InfoGraphic Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="df.jpg"
+                           frameborder="0" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel2">InfoGraphic Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="PH 105.pdf"
+                           frameborder="0" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+
 
     <!--   Field Visits Banners  -->
     <section id="fieldvisits">
@@ -189,7 +462,7 @@
                             <div class="row g-0">
                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                     <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-                                         class="sponsor-image" alt="...">
+                                         class="sponsor-image" alt="..." >
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -349,7 +622,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap JS CDN-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"         
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+        crossorigin="anonymous"></script>
+    
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<!-- Article Carousel (For Carousel)-->    
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+    bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 3
+    });
+    </script>
 </body>
 </html>
