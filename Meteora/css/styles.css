@@ -59,6 +59,10 @@
     text-align: center;
 }
 
+.modal-backdrop {
+  z-index: -1;
+}
+
 .centered a {
     color: white;
     text-decoration: none;
